@@ -1,0 +1,17 @@
+#include <stdio.h>
+void fun(int, int);
+int main()
+{
+    int i = 5, j = 2;
+    fun(i, j);
+    printf("%d %d\n", i, j);
+    return 0;
+}
+
+void fun(int i, int j)
+{
+    i = i * i;
+    j = j * j;
+}
+
+// Output------>Prints 5 2 as void fun didn't return anything.
